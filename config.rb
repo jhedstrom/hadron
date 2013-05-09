@@ -2,6 +2,9 @@
 # Compass Configuration
 #
 
+# Use Foundation.
+require 'zurb-foundation'
+
 # HTTP paths
 http_path             = '/'
 http_stylesheets_path = '/stylesheets'
