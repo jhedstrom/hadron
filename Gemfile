@@ -10,6 +10,7 @@ gem 'rack-contrib'
 
 # Use Compass and Sass
 gem 'compass'
+gem 'zurb-foundation'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
