@@ -1,5 +1,4 @@
 @import "compass";
-@import "foundation";
 
 // Reversed?
 $reversed-text: false;
@@ -48,3 +47,5 @@ $default-border-radius: 8px;
 
 html, body { background: $background-color; }
 body { @include base-font; }
+
+@import "foundation";
