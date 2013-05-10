@@ -5,3 +5,7 @@
 @import "partials/base";
 @import "partials/content";
 @import "partials/layout";
+
+.element-invisible {
+  @include element-invisible;
+}
