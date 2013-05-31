@@ -14,30 +14,31 @@
     <link rel="canonical" href="/node/98" />
     <title><%= @title %></title>
     <link rel="stylesheet" href="/stylesheets/screen.css">
-
-    <script src="/javascripts/vendor/custom.modernizr.js"></script>
-    <script src="/javascripts/vendor/zepto.js"></script>
-    <script src="/javascripts/foundation.min.js"></script>
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <script src="javascripts/vendor/zepto.js"></script>
+`   <script src="javascripts/vendor/foundation.min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-98 node-type-article">
-    <div id="skip-link">
+    <div id="skip-link">`
       <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
     </div>
     <div id="page" class="container page">
+     <div class="row">
+       <div class="large-6 columns">
 
       <!-- region: Leaderboard -->
-      
-      <%= render 'header' %>
+         <%= render 'header' %>
+      </div>
+      <div class="large-12 columns">
 
       <!-- Navigation elements -->
-
-      <%= render 'navigation' %>
+        <%= render 'navigation' %>
+      </div>
 
       <!-- Breadcrumbs -->
-      
       <!-- Messages and Help -->
       <!-- region: Secondary Content -->
       
@@ -74,9 +75,10 @@
 
         <!-- region: Tertiary Content -->
       </div>
-        
+      <div class="large-12 columns">  
       <!-- region: Footer -->
-      <%= render 'footer' %>
+         <%= render 'footer' %>
+      </div>
     </div>
   </body>
 </html>
