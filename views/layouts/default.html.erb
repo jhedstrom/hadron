@@ -3,7 +3,9 @@
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
 <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
 <!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta about="/node/98" property="sioc:num_replies" content="0" datatype="xsd:integer" />
@@ -14,14 +16,14 @@
     <link rel="canonical" href="/node/98" />
     <title><%= @title %></title>
     <link rel="stylesheet" href="/stylesheets/screen.css">
-    <script src="javascripts/vendor/custom.modernizr.js"></script>
-    <script src="javascripts/vendor/zepto.js"></script>
-`   <script src="javascripts/vendor/foundation.min.js"></script>
+
+    <script src="/javascripts/vendor/custom.modernizr.js"></script>
+    <script src="/javascripts/vendor/zepto.js"></script>
+    <script src="/javascripts/foundation.min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-<<<<<<< HEAD
 <body class="antialiased">
  <div class="row">
     <div class="large-3 columns">
@@ -34,56 +36,6 @@
       <%= render "navigation" %>
     </div>
   </div>
-  
-<!-- End Header and Nav -->
-=======
-  <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-98 node-type-article">
-    <div id="skip-link">`
-      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-    </div>
-    <div id="page" class="container page">
-     <div class="row">
-       <div class="large-6 columns">
-
-      <!-- region: Leaderboard -->
-         <%= render 'header' %>
-      </div>
-      <div class="large-12 columns">
-
-      <!-- Navigation elements -->
-        <%= render 'navigation' %>
-      </div>
-
-      <!-- Breadcrumbs -->
-      <!-- Messages and Help -->
-      <!-- region: Secondary Content -->
-      
-      <div id="columns" class="columns clearfix">
-        <div id="content-column" class="content-column" role="main">
-          <div class="content-inner">
-
-            <!-- region: Highlighted -->
-            
-            <section id="main-content">
-              
-              <header id="main-content-header" class="clearfix">
-                <h1 id="page-title"><%= @title %></h1>
-              </header>
-              
-              <!-- region: Main Content -->
-              <div id="content" class="region">
-                <div id="block-system-main" class="block block-system no-title" >  
-                  
-                  <%= yield %>
-
-                </div>
-              </div>
-              
-              <!-- Feed icons (RSS, Atom icons etc -->
-              
-              
-            </section><!-- /end #main-content -->
->>>>>>> master
 
 <!-- Breadcrumb -->
 <div class= "row">
@@ -103,30 +55,14 @@
     
 <!-- Call to Action Panel -->
 <div class="row">
-    <div class="large-12 columns">
-    
-      <div class="panel">
-        <h4>Get in touch!</h4>
-            
-        <div class="row">
-          <div class="large-9 columns">
-            <p>We'd love to hear from you, you attractive person you.</p>
-          </div>
-          <div class="large-3 columns">
-            <a href="#" class="radius button right">Contact Us</a>
-          </div>
-        </div>
-      </div>
-<<<<<<< HEAD
+    <div class="large-12 columns"> 
+    <%= render 'contact' %>
       
-=======
-      <div class="large-12 columns">  
+     
       <!-- region: Footer -->
          <%= render 'footer' %>
       </div>
->>>>>>> master
     </div>
-  </div>
  
   <!-- Footer -->
   
