@@ -14,62 +14,92 @@
     <link rel="canonical" href="/node/98" />
     <title><%= @title %></title>
     <link rel="stylesheet" href="/stylesheets/screen.css">
-
-    <script src="/javascripts/vendor/custom.modernizr.js"></script>
-    <script src="/javascripts/vendor/zepto.js"></script>
-    <script src="/javascripts/foundation.min.js"></script>
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <script src="javascripts/vendor/zepto.js"></script>
+`   <script src="javascripts/vendor/foundation.min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+<<<<<<< HEAD
 <body class="antialiased">
  <div class="row">
     <div class="large-3 columns">
-      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
+      <%= render "header" %>
     </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-    	<li><a href="#" class="button">Link 1</a></li>
-    	<li><a href="#" class="button">Link 2</a></li>
-    	<li><a href="#" class="button">Link 3</a></li>
-    	<li><a href="#" class="button">Link 4</a></li>
-    	</ul>
+    <div class="large-3 large-offset-6 columns">
+      <%= render "quicklinks" %>
      </div>
-   </div>
-  
-<!-- End Header and Nav -->
- 
-<!-- First Band (Slider) -->
- 
-  <div class="row">
     <div class="large-12 columns">
-    <%= render 'orbit' %>    
-    <hr />
+      <%= render "navigation" %>
     </div>
   </div>
   
+<!-- End Header and Nav -->
+=======
+  <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-98 node-type-article">
+    <div id="skip-link">`
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+    <div id="page" class="container page">
+     <div class="row">
+       <div class="large-6 columns">
+
+      <!-- region: Leaderboard -->
+         <%= render 'header' %>
+      </div>
+      <div class="large-12 columns">
+
+      <!-- Navigation elements -->
+        <%= render 'navigation' %>
+      </div>
+
+      <!-- Breadcrumbs -->
+      <!-- Messages and Help -->
+      <!-- region: Secondary Content -->
+      
+      <div id="columns" class="columns clearfix">
+        <div id="content-column" class="content-column" role="main">
+          <div class="content-inner">
+
+            <!-- region: Highlighted -->
+            
+            <section id="main-content">
+              
+              <header id="main-content-header" class="clearfix">
+                <h1 id="page-title"><%= @title %></h1>
+              </header>
+              
+              <!-- region: Main Content -->
+              <div id="content" class="region">
+                <div id="block-system-main" class="block block-system no-title" >  
+                  
+                  <%= yield %>
+
+                </div>
+              </div>
+              
+              <!-- Feed icons (RSS, Atom icons etc -->
+              
+              
+            </section><!-- /end #main-content -->
+>>>>>>> master
+
+<!-- Breadcrumb -->
+<div class= "row">
+  <div class="large-12 columns">
+    <%= render "breadcrumb" %>
+  </div>
+</div>
+ 
+<!-- First Band (Slider) -->
+<div class = "row">
+  <%= yield %>
+</div>
 <!-- Three-up Content Blocks -->
  
 	<div class="row">
-		<div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-    
-    <div class="large-4 columns">
-      <img src="http://placehold.it/400x300&text=[img]" />
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-    </div>
-	
-    </div>
+   </div>
     
 <!-- Call to Action Panel -->
 <div class="row">
@@ -87,7 +117,14 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       
+=======
+      <div class="large-12 columns">  
+      <!-- region: Footer -->
+         <%= render 'footer' %>
+      </div>
+>>>>>>> master
     </div>
   </div>
  
