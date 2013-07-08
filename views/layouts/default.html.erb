@@ -27,26 +27,28 @@
 <body class="antialiased">
  <div class="row">
     <div class="large-3 columns">
-      <%= render "header" %>
+      <%= render "/header" %>
     </div>
     <div class="large-3 large-offset-6 columns">
-      <%= render "quicklinks" %>
+      <%= render "/quicklinks" %>
      </div>
     <div class="large-12 columns">
-      <%= render "navigation" %>
+      <%= render "/navigation" %>
     </div>
   </div>
 
 <!-- Breadcrumb -->
 <div class= "row">
   <div class="large-12 columns">
-    <%= render "breadcrumb" %>
+    <%= render "/breadcrumb" %>
   </div>
 </div>
  
 <!-- First Band (Slider) -->
 <div class = "row">
-  <%= yield %>
+  <div class="large-12 columns">
+   <%= yield %>
+  </div>
 </div>
 <!-- Three-up Content Blocks -->
  
@@ -55,34 +57,17 @@
     
 <!-- Call to Action Panel -->
 <div class="row">
-    <div class="large-12 columns"> 
-    <%= render 'contact' %>
-      
-     
-      <!-- region: Footer -->
-         <%= render 'footer' %>
-      </div>
-    </div>
- 
-  <!-- Footer -->
-  
+  <div class="large-12 columns"> 
+    <%= render "/contact" %>
+  </div>
+</div>
+
+<!-- Footer -->      
   <footer class="row">
     <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
+      <%= render "/footer" %>
+    </div>
+     
   </footer>
     <script>
       $(document)
