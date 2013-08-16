@@ -12,7 +12,7 @@ http_images_path      = '/images'
 http_javascripts_path = '/javascripts'
 
 # File system locations
-sass_dir              = 'stylesheets'
+sass_dir              = 'sass'
 css_dir               = 'public/stylesheets'
 images_dir            = 'public/images'
 javascripts_dir       = 'public/javascripts'
