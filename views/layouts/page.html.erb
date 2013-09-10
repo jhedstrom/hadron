@@ -38,23 +38,19 @@
   </div>
 
 <!-- Breadcrumb -->
-<div class= "row">
+<div class="row">
   <div class="large-12 columns">
-    <%= render "/breadcrumb" %>
-  </div>
-</div>
- 
-<!-- First Band (Slider) -->
-<div class = "row">
-  <div class="large-12 columns">
-   <%= yield %>
+    <div class="large-3 columns">
+     <%= render "/sidebarnav" %>
+    </div>
+    <div class="large-9 columns">
+     <%= render "/breadcrumb" %>
+     <%= yield %>
+    </div>
   </div>
 </div>
 <!-- Three-up Content Blocks -->
- 
-	<div class="row">
-   </div>
-    
+
 <!-- Call to Action Panel -->
 <div class="row">
   <div class="large-12 columns"> 
