@@ -1,5 +1,29 @@
 
-<div class="section-container auto" data-section data-options="deep_linking: true"> 
+<div class="section-container auto" data-section data-options="deep_linking: true">
+<section>
+    <p class="title" data-section-title><a href="#register">Create new account</a></p>
+    <div class="content" data-slug="register" data-section-content>
+       <form action="/registered" method="put" data-abide>
+      <p>
+        <label for="username">Username*</label>
+        <input type="text" name="username" id="username" />
+      </p>
+      <p>
+        Spaces are allowed; punctuation is not allowed except for periods, hyphens, and underscores.
+      </p>
+      <p>
+        <label for="E-mail address">E-mail address*</label>
+        <input type="text" name="email" id="email" />
+      </p>
+      <p>
+        A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.
+      </p>
+      <p>
+        <input type="submit" value="Create new account" />
+      </p>
+    </form>
+    </div>
+  </section> 
   <section>
     <p class="title" data-section-title><a href="#login">Log in</a></p>
     <div class="content" data-slug="login" data-section-content>
