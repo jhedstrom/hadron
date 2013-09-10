@@ -20,37 +20,39 @@
     <script src="/javascripts/vendor/custom.modernizr.js"></script>
     <script src="/javascripts/vendor/zepto.js"></script>
     <script src="/javascripts/foundation.min.js"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-83c78c0a-56da-6f83-4a29-45cbbd75e1a1", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
 <body class="antialiased">
  <div class="row">
+  <div class="large-12 columns">
     <div class="large-3 small-6 columns">
       <%= render "/header" %>
     </div>
     <div class="large-6 large-offset-3 small-6 columns right">
       <%= render "/quicklinks" %>
      </div>
+    </div>
     <div class="large-12 columns">
       <%= render "/navigation" %>
-    </div>
+  </div>
   </div>
 
-<!-- Breadcrumb -->
-<div class="row">
-  <div class="large-12 columns">
-    <div class="large-3 columns">
-     <%= render "/sidebarnav" %>
-    </div>
-    <div class="large-9 columns">
-     <%= render "/breadcrumb" %>
-     <%= yield %>
-    </div>
+<!-- First Band (Slider) -->
+<div class = "row">
+  <div class="large-6 large-offset-3 columns">
+   <%= yield %>
   </div>
 </div>
 <!-- Three-up Content Blocks -->
-
+ 
+	<div class="row">
+   </div>
+    
 <!-- Call to Action Panel -->
 <div class="row">
   <div class="large-12 columns"> 
