@@ -78,6 +78,37 @@ Where "project" is the path to the project and "output" is the path to the
 directory where you would like your HTML and CSS generated.
 
 
+Using Partials Across Multiple Layouts & Subdirectories
+------------------------------------
+In your prototype, it may become necessary to create a more formalized tree structure for your content. For instance, say we have the following, simplistic site map:
+
+    <home>
+    |----<about>
+    |    |----<mission and history>
+    |----<news>
+         |----<brand new website launch!>
+    
+It may be necessary to have a different layout for each of home, about and news. To do this, you will need to create subdirectories. For example, since about and mission & history are both basic pages in this scenario, you may want to create a new directory within the views directory called "about" and place both about.html.erb and mission-and-history.html.erb in it.
+
+You will also need to copy \_layout.html.erb from the views directory into your new subdirectory. If you do not copy this file over, the \_layout.html.erb will be inherited from the closest parent directory.
+
+To create a new layout for your basic pages, in the views/layouts directory create a copy of the default.html.erb file, renaming it to a descriptive title, such as basic-page.html.erb. Feel free to edit it as you see fit.
+
+Now go back to your \_layout.html.erb in the subdirectory you made earlier, and alter it to say
+
+    <%= render "/layouts/basic-page" %>
+
+To maintain reuse partials regardless of where your page lives within the tree structure default.html.erb, be sure to use the absolute path of your partials. For instance, use
+
+    <%= render "/footer" %>
+
+rather than,
+
+    <%= render "footer" %>
+
+This will keep your serve instance running smoothly across advanced tree structures and multiple page layouts. 
+    
+    
 Learning More
 -------------
 
