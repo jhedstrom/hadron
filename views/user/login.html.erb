@@ -1,0 +1,58 @@
+
+<div class="section-container auto" data-section data-options="deep_linking: true">
+<section>
+    <p class="title" data-section-title><a href="#register">Create new account</a></p>
+    <div class="content" data-slug="register" data-section-content>
+       <form action="/registered" method="put" data-abide>
+      <p>
+        <label for="username">Username*</label>
+        <input type="text" name="username" id="username" />
+      </p>
+      <p>
+        Spaces are allowed; punctuation is not allowed except for periods, hyphens, and underscores.
+      </p>
+      <p>
+        <label for="E-mail address">E-mail address*</label>
+        <input type="text" name="email" id="email" />
+      </p>
+      <p>
+        A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.
+      </p>
+      <p>
+        <input type="submit" value="Create new account" />
+      </p>
+    </form>
+    </div>
+  </section> 
+  <section>
+    <p class="title" data-section-title><a href="#login">Log in</a></p>
+    <div class="content" data-slug="login" data-section-content>
+       <form action="/dashboard/john-smith" method="put" data-abide>
+      <p>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </p>
+      <p>
+        <input type="submit" value="Login" />
+      </p>
+    </form>
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title><a href="#new-password">Request new password</a></p>
+    <div class="content" data-slug="new-password" data-section-content>
+      <form action="/user/password-requested" method="put" data-abide>
+      <p>
+        <label for="username">Username or e-mail address</label>
+        <input type="text" name="username" id="username" />
+         <p>
+        <input type="submit" value="E-mail new password" />
+      </p>
+      </p>
+    </div>
+  </section>
+</div>
